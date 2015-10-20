@@ -1,8 +1,6 @@
 # Quickstrings
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/quickstrings`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Quickstrings - a friendly little gem to help you generate useful strings on the fly when you're seeding your database with test data, or trying some experiements in IRB, etc.  Quickstrings will help you generate the data you need with some simple function calls.
 
 ## Installation
 
@@ -22,7 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Be sure to first require it in your code or IRB:
+
+```ruby
+require 'quickstrings'
+``` 
+Then you can quickly generate the different types of strings you may need:
+
+Examples:
+```ruby
+Quickstrings.email
+Quickstrings.rstring(10)
+
+# but if you don't like typing Quickstrings namespace out each time, you can shorten it
+# e.g. QS=Quickstrings
+QS.email
+QS.rstring(10)
+
+```
 
 ## Development
 
@@ -32,7 +47,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/quickstrings.
+Bug reports and pull requests are welcome on GitHub at https://github.com/C4mz0r/quickstrings.
 
 
 ## License
