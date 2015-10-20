@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Generate different types of common strings quickly!  Great for creating test data!}
   spec.description   = %q{Do you hate typing / copying strings all over the place when your working on your app?  This gem will help you to create common strings quickly and easily.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/C4mz0r/quickstrings"
   spec.license       = "MIT"
 
 =begin
