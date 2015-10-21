@@ -19,52 +19,53 @@ module Quickstrings
 	    "http://www.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d" # gravatar image from Hartl's book
            ]
   
+  module_function
 
-  def Quickstrings.url
+  def url
     URLS.first
   end
 
-  def Quickstrings.rurl
+  def rurl
     URLS.sample
   end
 
-  def Quickstrings.email
+  def email
     EMAILS.first
   end
 
-  def Quickstrings.remail
+  def remail
     EMAILS.sample
   end
 
-  def Quickstrings.fname
+  def fname
     NAMES.first
   end
 
-  def Quickstrings.rfname
+  def rfname
     NAMES.sample
   end
 
-  def Quickstrings.flname
+  def flname
     FULLNAMES.first
   end
 
-  def Quickstrings.rflname
+  def rflname
     FULLNAMES.sample
   end
 
-  def Quickstrings.rutf8string(length = 1)
+  def rutf8string(length = 1)
     whitelist_string UTF8SAMPLE, length
   end
 
-  def Quickstrings.image(size = nil)
+  def image(size = nil)
 	IMAGES.first + (size.nil? ? "":"?s=#{size}")
   end
 
-  def Quickstrings.rimage(size = nil)
+  def rimage(size = nil)
 	IMAGES.sample + (size.nil? ? "":"?s=#{size}")
   end
 
-  def Quickstrings.rstring(length = 1, delim = nil)
+  def rstring(length = 1, delim = nil)
     new_string = whitelist_string ('a'..'z'), length
     if !delim.nil?
       new_string[0] = delim
@@ -75,7 +76,7 @@ module Quickstrings
 
 
 
-  def Quickstrings.whitelist_string(whitelist, length)
+  def whitelist_string(whitelist, length)
 
     case(whitelist)
     when Range
